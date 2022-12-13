@@ -1,0 +1,37 @@
+09:25:54 **** Build of configuration Debug for project tftest ****
+make -j8 all 
+Building file: ../synergy/ssp/src/driver/r_ioport/r_ioport.c
+Building file: ../synergy/ssp/src/driver/r_cgc/r_cgc.c
+Building file: ../synergy/ssp/src/driver/r_elc/r_elc.c
+Building file: ../synergy/ssp/src/bsp/mcu/s7g2/bsp_cache.c
+Building file: ../synergy/ssp/src/bsp/mcu/s7g2/bsp_clocks.c
+Building file: ../synergy/ssp/src/bsp/mcu/s7g2/bsp_hw_locks.c
+Building file: ../synergy/ssp/src/bsp/mcu/s7g2/bsp_feature.c
+Building file: ../synergy/ssp/src/bsp/mcu/s7g2/bsp_group_irq.c
+Building file: ../synergy/ssp/src/bsp/mcu/s7g2/bsp_module_stop.c
+Building file: ../synergy/ssp/src/bsp/mcu/all/bsp_common.c
+Building file: ../synergy/ssp/src/bsp/mcu/s7g2/bsp_rom_registers.c
+Building file: ../synergy/ssp/src/bsp/mcu/all/bsp_common_leds.c
+Building file: ../synergy/ssp/src/bsp/mcu/all/bsp_delay.c
+Building file: ../synergy/ssp/src/bsp/mcu/all/bsp_irq.c
+Building file: ../synergy/ssp/src/bsp/mcu/all/bsp_locking.c
+Building file: ../synergy/ssp/src/bsp/mcu/all/bsp_register_protection.c
+Building file: ../synergy/ssp/src/bsp/cmsis/Device/RENESAS/S7G2/Source/startup_S7G2.c
+Building file: ../synergy/ssp/src/bsp/mcu/all/bsp_sbrk.c
+Building file: ../synergy/ssp/src/bsp/cmsis/Device/RENESAS/S7G2/Source/system_S7G2.c
+Building file: ../synergy/board/s7g2_sk/bsp_init.c
+Building file: ../synergy/board/s7g2_sk/bsp_leds.c
+Building file: ../synergy/board/s7g2_sk/bsp_qspi.c
+Building file: ../src/synergy_gen/common_data.c
+Building file: ../src/synergy_gen/hal_data.c
+Building file: ../src/synergy_gen/main.c
+Building file: ../src/synergy_gen/pin_data.c
+Building file: ../src/hal_entry.c
+Building target: tftest.elf
+arm-none-eabi-objcopy -O srec "tftest.elf"  "tftest.srec"
+arm-none-eabi-size --format=berkeley "tftest.elf"
+   text	   data	    bss	    dec	    hex	filename
+  20972	    224	   6512	  27708	   6c3c	tftest.elf
+
+09:25:58 Build Finished. 0 errors, 0 warnings. (took 3s.817ms)
+

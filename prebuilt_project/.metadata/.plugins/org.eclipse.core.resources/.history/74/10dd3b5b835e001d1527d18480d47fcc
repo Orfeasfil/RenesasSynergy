@@ -1,0 +1,33 @@
+
+#include "hal_data.h"
+#include "main_functions.h"
+/*******************************************************************************************************************//**
+ * @brief  Blinky example application
+ *
+ * Blinks all leds at a rate of 1 second using the software delay function provided by the BSP.
+ * Only references two other modules including the BSP, IOPORT.
+ *
+ **********************************************************************************************************************/
+//extern "C" void DebugLog(const char* s)
+//{
+//
+//}
+void hal_entry(void) {
+    bsp_leds_t Leds;
+    R_BSP_LedsGet(&Leds);
+    setup();
+      while (true) {
+        loop();
+        g_ioport.p_api->pinWrite(Leds.p_leds[BSP_LED_LED1],
+         IOPORT_LEVEL_HIGH);
+         g_ioport.p_api->pinWrite(Leds.p_leds[BSP_LED_LED3],
+         IOPORT_LEVEL_LOW);
+         R_BSP_SoftwareDelay(1, BSP_DELAY_UNITS_SECONDS);
+         g_ioport.p_api->pinWrite(Leds.p_leds[BSP_LED_LED1],
+         IOPORT_LEVEL_LOW);
+         g_ioport.p_api->pinWrite(Leds.p_leds[BSP_LED_LED3],
+         IOPORT_LEVEL_HIGH);
+         R_BSP_SoftwareDelay(1, BSP_DELAY_UNITS_SECONDS);
+      }
+
+}

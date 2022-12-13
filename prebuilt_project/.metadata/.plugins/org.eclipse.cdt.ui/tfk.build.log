@@ -1,0 +1,75 @@
+08:42:30 **** Incremental Build of configuration Debug for project tfk ****
+make -j8 all 
+Building file: ../synergy/ssp/src/driver/r_elc/r_elc.c
+Building file: ../synergy/ssp/src/driver/r_ioport/r_ioport.c
+Building file: ../synergy/ssp/src/driver/r_cgc/r_cgc.c
+Building file: ../synergy/ssp/src/bsp/mcu/s7g2/bsp_cache.c
+Building file: ../synergy/ssp/src/bsp/mcu/s7g2/bsp_clocks.c
+Building file: ../synergy/ssp/src/bsp/mcu/s7g2/bsp_feature.c
+Building file: ../synergy/ssp/src/bsp/mcu/s7g2/bsp_group_irq.c
+Building file: ../synergy/ssp/src/bsp/mcu/s7g2/bsp_hw_locks.c
+In file included from C:/Users/ElliA/e2_studio/workspace5/tfk/synergy/ssp/inc/bsp/bsp_api.h:45,
+                 from C:/Users/ElliA/e2_studio/workspace5/tfk/synergy/ssp/inc/driver/instances/r_cgc.h:42,
+                 from ../synergy/ssp/src/driver/r_cgc/r_cgc.c:29:
+C:/Users/ElliA/e2_studio/workspace5/tfk/synergy_cfg/ssp_cfg/bsp/bsp_cfg.h:6:10: fatal error: bsp_board_cfg.h: No such file or directory
+    6 | #include "bsp_board_cfg.h"
+      |          ^~~~~~~~~~~~~~~~~
+In file included from C:/Users/ElliA/e2_studio/workspace5/tfk/synergy/ssp/inc/bsp/bsp_api.h:45,
+                 from ../synergy/ssp/src/bsp/mcu/s7g2/bsp_clocks.c:39:
+C:/Users/ElliA/e2_studio/workspace5/tfk/synergy_cfg/ssp_cfg/bsp/bsp_cfg.h:6:10: fatal error: bsp_board_cfg.h: No such file or directory
+    6 | #include "bsp_board_cfg.h"
+      |          ^~~~~~~~~~~~~~~~~
+In file included from C:/Users/ElliA/e2_studio/workspace5/tfk/synergy/ssp/inc/bsp/bsp_api.h:45,
+                 from C:/Users/ElliA/e2_studio/workspace5/tfk/synergy/ssp/inc/driver/instances/r_cgc.h:42,
+                 from ../synergy/ssp/src/bsp/mcu/s7g2/bsp_feature.c:29:
+C:/Users/ElliA/e2_studio/workspace5/tfk/synergy_cfg/ssp_cfg/bsp/bsp_cfg.h:6:10: fatal error: bsp_board_cfg.h: No such file or directory
+    6 | #include "bsp_board_cfg.h"
+      |          ^~~~~~~~~~~~~~~~~
+compilation terminated.
+compilation terminated.
+compilation terminated.
+In file included from C:/Users/ElliA/e2_studio/workspace5/tfk/synergy/ssp/inc/bsp/bsp_api.h:45,
+                 from ../synergy/ssp/src/bsp/mcu/s7g2/bsp_hw_locks.c:38:
+C:/Users/ElliA/e2_studio/workspace5/tfk/synergy_cfg/ssp_cfg/bsp/bsp_cfg.h:6:10: fatal error: bsp_board_cfg.h: No such file or directory
+    6 | #include "bsp_board_cfg.h"
+      |          ^~~~~~~~~~~~~~~~~
+compilation terminated.
+In file included from C:/Users/ElliA/e2_studio/workspace5/tfk/synergy/ssp/inc/bsp/bsp_api.h:45,
+                 from C:/Users/ElliA/e2_studio/workspace5/tfk/synergy/ssp/inc/driver/instances/r_elc.h:43,
+                 from ../synergy/ssp/src/driver/r_elc/r_elc.c:29:
+C:/Users/ElliA/e2_studio/workspace5/tfk/synergy_cfg/ssp_cfg/bsp/bsp_cfg.h:6:10: fatal error: bsp_board_cfg.h: No such file or directory
+    6 | #include "bsp_board_cfg.h"
+      |          ^~~~~~~~~~~~~~~~~
+compilation terminated.
+make: *** [synergy/ssp/src/bsp/mcu/s7g2/subdir.mk:37: synergy/ssp/src/bsp/mcu/s7g2/bsp_clocks.o] Error 1
+make: *** Waiting for unfinished jobs....
+In file included from C:/Users/ElliA/e2_studio/workspace5/tfk/synergy/ssp/inc/bsp/bsp_api.h:45,
+                 from ../synergy/ssp/src/bsp/mcu/s7g2/bsp_cache.c:27:
+C:/Users/ElliA/e2_studio/workspace5/tfk/synergy_cfg/ssp_cfg/bsp/bsp_cfg.h:6:10: fatal error: bsp_board_cfg.h: No such file or directory
+    6 | #include "bsp_board_cfg.h"
+      |          ^~~~~~~~~~~~~~~~~
+compilation terminated.
+make: *** [synergy/ssp/src/bsp/mcu/s7g2/subdir.mk:37: synergy/ssp/src/bsp/mcu/s7g2/bsp_feature.o] Error 1
+make: *** [synergy/ssp/src/driver/r_cgc/subdir.mk:19: synergy/ssp/src/driver/r_cgc/r_cgc.o] Error 1
+make: *** [synergy/ssp/src/bsp/mcu/s7g2/subdir.mk:37: synergy/ssp/src/bsp/mcu/s7g2/bsp_hw_locks.o] Error 1
+In file included from C:/Users/ElliA/e2_studio/workspace5/tfk/synergy/ssp/inc/bsp/bsp_api.h:45,
+                 from C:/Users/ElliA/e2_studio/workspace5/tfk/synergy/ssp/inc/driver/instances/r_ioport.h:45,
+                 from ../synergy/ssp/src/driver/r_ioport/r_ioport.c:32:
+C:/Users/ElliA/e2_studio/workspace5/tfk/synergy_cfg/ssp_cfg/bsp/bsp_cfg.h:6:10: fatal error: bsp_board_cfg.h: No such file or directory
+    6 | #include "bsp_board_cfg.h"
+      |          ^~~~~~~~~~~~~~~~~
+compilation terminated.
+make: *** [synergy/ssp/src/driver/r_elc/subdir.mk:19: synergy/ssp/src/driver/r_elc/r_elc.o] Error 1
+In file included from C:/Users/ElliA/e2_studio/workspace5/tfk/synergy/ssp/inc/bsp/bsp_api.h:45,
+                 from ../synergy/ssp/src/bsp/mcu/s7g2/bsp_group_irq.c:30:
+C:/Users/ElliA/e2_studio/workspace5/tfk/synergy_cfg/ssp_cfg/bsp/bsp_cfg.h:6:10: fatal error: bsp_board_cfg.h: No such file or directory
+    6 | #include "bsp_board_cfg.h"
+      |          ^~~~~~~~~~~~~~~~~
+compilation terminated.
+make: *** [synergy/ssp/src/bsp/mcu/s7g2/subdir.mk:37: synergy/ssp/src/bsp/mcu/s7g2/bsp_cache.o] Error 1
+make: *** [synergy/ssp/src/driver/r_ioport/subdir.mk:19: synergy/ssp/src/driver/r_ioport/r_ioport.o] Error 1
+make: *** [synergy/ssp/src/bsp/mcu/s7g2/subdir.mk:37: synergy/ssp/src/bsp/mcu/s7g2/bsp_group_irq.o] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+
+08:42:32 Build Failed. 17 errors, 0 warnings. (took 1s.595ms)
+

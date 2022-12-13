@@ -1,0 +1,18 @@
+Extracting support files...
+12:11:32 **** Incremental Build of configuration Debug for project tfm ****
+make -j8 all 
+Building file: ../src/hal_entry.cpp
+Building target: tfm.elf
+arm-none-eabi-objcopy -O srec "tfm.elf"  "tfm.srec"
+arm-none-eabi-size --format=berkeley "tfm.elf"
+   text	   data	    bss	    dec	    hex	filename
+ 301324	    240	  14096	 315660	  4d10c	tfm.elf
+
+12:11:35 Build Finished. 0 errors, 0 warnings. (took 2s.998ms)
+
+Extracting support files...
+12:11:36 **** Incremental Build of configuration Release for project tfm ****
+make -j8 all 
+arm-none-eabi-size --format=berkeley "tfm.elf"
+   text	   data	    bss	    dec	    hex	filename
+ 301324	    240	  14096	 315660	  4d10c	tfm.elf
